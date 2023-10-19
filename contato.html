@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Carlos | Portifólio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .contact-container {
+            background-color: #000;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-group {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 500px) {
+            .contact-container {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- inicio barra navegacao -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Sobre mim</a>
+            </li>
+            <li>
+                <a href="formacao.html">Formação</a>
+            </li>
+            <li>
+                <a href="projeto.html">Projetos</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- fim barra navegacao -->
+
+    <!-- inicio cabeçalho -->
+    <header>
+        <div class="center">
+            <img src="./img/luizcarlos.jpeg"></img>
+        </div>
+    </header>
+    <!-- fim cabeçalho -->
+
+    <!-- inicio conteudo da pagina -->
+    <main>
+        <section>
+            <div class="contact-container">
+                <h1>Entre em Contato</h1>
+                <form>
+                    <div class="input-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- fim conteudo da pagina -->
+
+    <!-- inicio rodape -->
+    <footer>
+        <a href="https://github.com/lcarlosrezende" target="_blank" rel="noopener noreferrer">
+            <img src="./img/github.svg">
+            <p>Github</p>
+        </a>
+        <a href="https://www.linkedin.com/in/luiz-carlos-rezende-62b627285/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/linkedin.svg">
+            <p>Linkedin</p>
+        </a>
+        <a href="https://www.facebook.com/luizcarlosrezende.luiz/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/facebook.svg">
+            <p>Facebook</p>
+        </a>
+    </footer>
+    <!-- fim rodape -->
+</body>
+</html>
